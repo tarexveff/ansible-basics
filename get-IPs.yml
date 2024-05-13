@@ -1,5 +1,4 @@
 - name: Get IP addresses
   hosts: all
   tasks:
-    - name: get IPs
-      debug: var=hostvars[inventory_hostname]['ansible_default_ipv4']['v4-address']
+    - debug: var=hostvars[inventory_hostname]['ansible_default_ipv4']['address']
